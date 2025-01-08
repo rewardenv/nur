@@ -39,7 +39,6 @@ stdenvNoCC.mkDerivation {
   installPhase = ''
     mkdir -p $out/bin
     cp -vr ./reward $out/bin/reward
-    installManPage ./manpages/ipsw.1.gz
   '';
   postInstall = ''
     installShellCompletion ./completions/reward/*
